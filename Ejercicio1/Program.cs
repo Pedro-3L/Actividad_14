@@ -37,7 +37,7 @@ foreach (Estudiante e in estudiantes)
 	}
 }
 Console.WriteLine();
-Console.WriteLine("Mejor estudiante:");
+Console.WriteLine("Estudiante con mejor promedio:");
 mejor.MostrarDatos();
 
 class Estudiante
