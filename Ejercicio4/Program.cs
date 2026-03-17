@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 List<Libro> libros = new List<Libro>();
-Console.Write("¿Cuántos libros desea registrar?: ");
+Console.Write("Ingrese la cantidad de libro que desea registrar: ");
 int n = int.Parse(Console.ReadLine());
 for (int i = 0; i < n; i++)
 {
@@ -43,9 +43,9 @@ class Libro
 	public int Paginas;
 	public string ClasificarTamaño()
 	{
-		if (Paginas < 200)
+		if (Paginas >= 500)
 		{
-			return "Corto";
+			return "Extenso";
 
 		}
 		else if (Paginas >= 200)
@@ -55,7 +55,7 @@ class Libro
 		}
 		else
 		{
-			return "Extenso";
+			return "Corto";
 		}
 	}
 	public void MostrarDatos()
