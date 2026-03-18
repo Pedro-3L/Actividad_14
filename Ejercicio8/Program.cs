@@ -26,7 +26,7 @@ for (int i = 0; i < n; i++)
 
 	if (!retiroExitoso)
 	{
-		Console.WriteLine("No se pudo realizar el retiro por saldo insuficiente.");
+		Console.WriteLine("Saldo no suficiente");
 	}
 	cuentas.Add(c);
 }
@@ -49,7 +49,8 @@ class Cuenta
 	{
 		if (monto <= Saldo) 
 		{ 
-			Saldo -= monto; return true;
+			Saldo -= monto; 
+			return true;
 		}
 		return false;
 	}
